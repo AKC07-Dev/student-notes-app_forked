@@ -29,6 +29,10 @@
 
     --shadow-color: rgba(0, 0, 0, 0.2);
     --shadow-color-soft: rgba(0, 0, 0, 0.1);
+
+    --blue-gradient1: linear-gradient(135deg, #0076FF, #0033AA);
+    --blue-gradient2: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    --blue-gradient3: linear-gradient(135deg, #4da0ff, #133a94);
 }
 
 [data-theme="dark"]{
@@ -67,7 +71,8 @@ body{
 }
 
 .container{
-    width:500px;
+    width:1200px;
+
     background:var(--surface-color);
     padding:20px;
     border-radius:10px;
@@ -288,7 +293,7 @@ button{
     margin-top:10px;
     padding:10px;
     border:none;
-    background:var(--primary-bg);
+    background:var(--blue-gradient3);
     color:var(--primary-text);
     border-radius:5px;
     cursor:pointer;
@@ -301,7 +306,7 @@ button{
 }
 
 button:hover{
-    background:var(--primary-bg-hover);
+    background:var(--blue-gradient2);
 }
 
 button:focus-visible{
